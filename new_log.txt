@@ -1,2 +1,6 @@
-окт. 04, 2020 10:19:19 PM ru.mail.ComposLogger waitFor
-INFO: 2 first
+окт. 04, 2020 10:32:02 PM ru.mail.FileLogger waitFor
+INFO: 1 <b>firstcom<b>
+окт. 04, 2020 10:32:17 PM ru.mail.FileLogger waitFor
+INFO: 2 <b>secondcom<b>
+окт. 04, 2020 10:32:23 PM ru.mail.FileLogger waitFor
+INFO: 3 <b>thirdcom<b>

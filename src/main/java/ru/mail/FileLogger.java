@@ -23,6 +23,9 @@ public class FileLogger implements CheckLogger {
     @Override
     public void waitFor(){
         try (Scanner scanner = new Scanner(System.in)) {
+            System.out.println("Your teg:");
+            String teg = scanner.nextLine();
+            String tegcomb = "<"+teg+">";
             System.out.println("Waiting for new lines. Key in Ctrl+D to exit.");
             while (true) {
 
@@ -33,7 +36,7 @@ public class FileLogger implements CheckLogger {
                 fh.setFormatter(sf);
                 this.logger.addHandler(fh);
                 logger.setUseParentHandlers(false);
-                this.logger.log(Level.INFO,messages.size()+" "+information);
+                this.logger.log(Level.INFO,messages.size()+" "+tegcomb+information+tegcomb);
 
             }
         } catch (IllegalStateException | NoSuchElementException| IOException e) {
